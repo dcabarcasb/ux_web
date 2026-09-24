@@ -1,0 +1,128 @@
+{
+ "page_size": [
+  1440.0,
+  1024.0
+ ],
+ "blocks": [
+  {
+   "text": "ALARMA FAMILIAR · TIPOGRAFÍA",
+   "font": "Type3 (144 0 R)",
+   "size": 30.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    58.3,
+    566.6,
+    95.5
+   ]
+  },
+  {
+   "text": "Inter",
+   "font": "Type3 (144 0 R)",
+   "size": 20.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    128.6,
+    125.8,
+    153.3
+   ]
+  },
+  {
+   "text": "Organiza tu familia",
+   "font": "Type3 (144 0 R)",
+   "size": 36.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    222.2,
+    409.2,
+    266.8
+   ]
+  },
+  {
+   "text": "H1 · 36 px · Extra Bold",
+   "font": "Type3 (144 0 R)",
+   "size": 13.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    286.7,
+    214.7,
+    302.8
+   ]
+  },
+  {
+   "text": "Alarmas familiares",
+   "font": "Type3 (144 0 R)",
+   "size": 28.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    380.4,
+    334.3,
+    415.0
+   ]
+  },
+  {
+   "text": "H2 · 28 px · Extra Bold",
+   "font": "Type3 (144 0 R)",
+   "size": 13.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    436.7,
+    216.1,
+    452.8
+   ]
+  },
+  {
+   "text": "Cita médica de Samuel",
+   "font": "Type3 (144 0 R)",
+   "size": 18.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    541.6,
+    280.4,
+    563.9
+   ]
+  },
+  {
+   "text": "Título de tarjeta · 18 px · Bold",
+   "font": "Type3 (144 0 R)",
+   "size": 13.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    586.7,
+    258.4,
+    602.8
+   ]
+  },
+  {
+   "text": "Hoy · 3:00 p. m. · Hospital Central",
+   "font": "Type3 (144 0 R)",
+   "size": 16.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    682.6,
+    334.0,
+    702.5
+   ]
+  },
+  {
+   "text": "Body · 16 px · Regular",
+   "font": "Type3 (144 0 R)",
+   "size": 13.0,
+   "color": "#000000",
+   "bbox": [
+    80.0,
+    726.7,
+    212.2,
+    742.8
+   ]
+  }
+ ]
+}

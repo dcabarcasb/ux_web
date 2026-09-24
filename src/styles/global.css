@@ -1,0 +1,413 @@
+:root {
+  /* Design tokens — extracted from mockup W00 Design System */
+  --af-marca: #163b62;
+  --af-primary: #2f6eed;
+  --af-surface: #e9f2ff;
+  --af-success: #11b669;
+  --af-success-bg: #ebfdf2;
+  --af-sos: #d82d1f;
+  --af-fondo: #f6f9fb;
+  --af-texto: #18212f;
+  --af-muted: #667085;
+  --af-border: #cfd4dd;
+  --af-nav-border: #e9ebef;
+  --af-prox-border: #c6d6fd;
+  --af-map-fill: #ddebdf;
+  --af-map-border: #b6d6bc;
+  --af-map-text: #52795b;
+
+  --af-font: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --af-r-card: 10px;
+  --af-r-btn: 9px;
+  --af-r-input: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--af-font);
+  background: #d9dee6;
+  color: var(--af-texto);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Fixed 1440 x 1024 mockup stage, centred on screen */
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px 0;
+}
+
+.screen {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  background: var(--af-fondo);
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(24, 34, 47, 0.18);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1500px) {
+  .stage {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+}
+
+/* ---------- Typography helpers ---------- */
+.t-title {
+  color: var(--af-texto);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.t-subtitle {
+  color: var(--af-muted);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.t-label {
+  color: var(--af-texto);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.t-body {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.t-card-title {
+  font-weight: 700;
+  color: var(--af-texto);
+}
+
+.t-muted {
+  color: var(--af-muted);
+}
+
+/* ---------- Buttons ---------- */
+.btn-af {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  padding: 0 16px;
+  border-radius: var(--af-r-btn);
+  border: 1px solid transparent;
+  font-family: var(--af-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: filter 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+
+.btn-af:active {
+  filter: brightness(0.94);
+}
+
+.btn-af-primary {
+  background: var(--af-primary);
+  border-color: var(--af-primary);
+  color: #ffffff;
+}
+
+.btn-af-primary:hover,
+.btn-af-primary:focus {
+  background: var(--af-primary);
+  border-color: var(--af-primary);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(47, 110, 237, 0.28);
+}
+
+.btn-af-secondary {
+  background: #ffffff;
+  border-color: var(--af-primary);
+  color: var(--af-primary);
+}
+
+.btn-af-secondary:hover,
+.btn-af-secondary:focus {
+  background: var(--af-surface);
+  border-color: var(--af-primary);
+  color: var(--af-primary);
+}
+
+/* ---------- Inputs ---------- */
+.af-label {
+  display: block;
+  color: var(--af-texto);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.af-input {
+  width: 100%;
+  height: 52px;
+  background: #ffffff;
+  border: 1px solid var(--af-border);
+  border-radius: var(--af-r-input);
+  padding: 0 16px;
+  font-family: var(--af-font);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--af-muted);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.af-input::placeholder {
+  color: var(--af-muted);
+}
+
+.af-input:focus {
+  border-color: var(--af-primary);
+  box-shadow: 0 0 0 3px rgba(47, 110, 237, 0.18);
+  color: var(--af-texto);
+}
+
+/* ---------- Cards ---------- */
+.af-card {
+  background: #ffffff;
+  border: 1px solid var(--af-border);
+  border-radius: var(--af-r-card);
+}
+
+/* ---------- Navbar ---------- */
+.af-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 78px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--af-nav-border);
+  display: flex;
+  align-items: center;
+}
+
+.af-nav-logo {
+  position: absolute;
+  left: 80px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--af-marca);
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.af-nav-item {
+  position: absolute;
+  top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.af-nav-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.af-nav-item.is-active .af-nav-icon {
+  background: var(--af-surface);
+  border-color: var(--af-primary);
+  color: var(--af-primary);
+}
+
+.af-nav-item.is-active .af-nav-label {
+  color: var(--af-primary);
+}
+
+.af-nav-item:not(.is-active) .af-nav-icon {
+  border-color: var(--af-border);
+  color: var(--af-muted);
+}
+
+.af-nav-item:not(.is-active) .af-nav-label {
+  color: var(--af-muted);
+}
+
+.af-nav-label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* ---------- Choice cards (Crear alarma) ---------- */
+.af-choice {
+  position: absolute;
+  width: 270px;
+  height: 78px;
+  background: #ffffff;
+  border: 1px solid var(--af-border);
+  border-radius: var(--af-r-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--af-primary);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.af-choice:hover {
+  border-color: var(--af-primary);
+  box-shadow: 0 6px 16px rgba(47, 110, 237, 0.14);
+}
+
+.af-choice.is-selected {
+  background: var(--af-surface);
+  border-color: var(--af-primary);
+  box-shadow: 0 0 0 3px rgba(47, 110, 237, 0.14);
+}
+
+/* ---------- Day chips (Repetir) ---------- */
+.af-day-chip {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 1px solid var(--af-border);
+  background: #ffffff;
+  color: var(--af-muted);
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.af-day-chip.is-selected {
+  background: var(--af-surface);
+  border-color: var(--af-primary);
+  color: var(--af-primary);
+}
+
+.af-day-chip:hover {
+  border-color: var(--af-primary);
+}
+
+/* ---------- Tabs (Alarmas) ---------- */
+.af-tab {
+  position: absolute;
+  top: 217px;
+  height: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--af-font);
+}
+
+.af-tab.is-active {
+  color: var(--af-primary);
+}
+
+.af-tab:not(.is-active) {
+  color: var(--af-muted);
+  font-weight: 500;
+}
+
+/* ---------- Alarm card ---------- */
+.af-alarm-card {
+  width: 390px;
+  height: 220px;
+}
+
+.af-alarm-sm-card {
+  width: 390px;
+  height: 150px;
+}
+
+/* ---------- Confirmation ---------- */
+.af-check-circle {
+  position: absolute;
+  left: 665px;
+  top: 165px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: var(--af-success-bg);
+  border: 1px solid var(--af-success);
+  color: var(--af-success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Map (Lugar) ---------- */
+.af-map {
+  position: absolute;
+  left: 620px;
+  top: 225px;
+  width: 740px;
+  height: 500px;
+  background: var(--af-map-fill);
+  border: 1px solid var(--af-map-border);
+  border-radius: var(--af-r-card);
+  overflow: hidden;
+}
+
+/* ---------- Login ---------- */
+.af-login-brand {
+  position: absolute;
+  left: 90px;
+  top: 84px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+/* small screen scale-down for very narrow viewports */
+@media (max-width: 720px) {
+  .stage {
+    justify-content: flex-start;
+  }
+}

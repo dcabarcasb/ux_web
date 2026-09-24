@@ -1,0 +1,152 @@
+{
+ "page_size": [
+  1440.0,
+  1024.0
+ ],
+ "blocks": [
+  {
+   "text": "ALARMA FAMILIAR",
+   "font": "Type3 (117 0 R)",
+   "size": 25.0,
+   "color": "#000000",
+   "bbox": [
+    90.0,
+    84.0,
+    322.8,
+    114.4
+   ]
+  },
+  {
+   "text": "Iniciar sesión",
+   "font": "Type3 (117 0 R)",
+   "size": 32.0,
+   "color": "#000000",
+   "bbox": [
+    835.0,
+    212.0,
+    1042.2,
+    250.9
+   ]
+  },
+  {
+   "text": "Tu familia,",
+   "font": "Type3 (117 0 R)",
+   "size": 44.0,
+   "color": "#000000",
+   "bbox": [
+    90.0,
+    270.0,
+    310.0,
+    323.5
+   ]
+  },
+  {
+   "text": "organizada y conectada.",
+   "font": "Type3 (117 0 R)",
+   "size": 44.0,
+   "color": "#000000",
+   "bbox": [
+    90.0,
+    325.0,
+    618.0,
+    378.5
+   ]
+  },
+  {
+   "text": "Correo electrónico",
+   "font": "Type3 (117 0 R)",
+   "size": 13.0,
+   "color": "#000000",
+   "bbox": [
+    835.0,
+    302.0,
+    953.7,
+    317.8
+   ]
+  },
+  {
+   "text": "correo@ejemplo.com",
+   "font": "Type3 (117 0 R)",
+   "size": 14.0,
+   "color": "#000000",
+   "bbox": [
+    851.0,
+    345.0,
+    991.1,
+    362.0
+   ]
+  },
+  {
+   "text": "Contraseña",
+   "font": "Type3 (117 0 R)",
+   "size": 13.0,
+   "color": "#000000",
+   "bbox": [
+    835.0,
+    407.0,
+    909.2,
+    422.8
+   ]
+  },
+  {
+   "text": "\"\"\"\"\"\"\"\"",
+   "font": "Type3 (117 0 R)",
+   "size": 14.0,
+   "color": "#000000",
+   "bbox": [
+    851.0,
+    450.0,
+    913.9,
+    467.0
+   ]
+  },
+  {
+   "text": "INGRESAR",
+   "font": "Type3 (117 0 R)",
+   "size": 14.0,
+   "color": "#000000",
+   "bbox": [
+    1024.4,
+    554.0,
+    1095.6,
+    571.0
+   ]
+  },
+  {
+   "text": "¿Olvidaste tu contraseña?",
+   "font": "Type3 (117 0 R)",
+   "size": 14.0,
+   "color": "#000000",
+   "bbox": [
+    970.3,
+    611.0,
+    1149.5,
+    628.0
+   ]
+  },
+  {
+   "text": "¿No tienes una cuenta?",
+   "font": "Type3 (117 0 R)",
+   "size": 14.0,
+   "color": "#000000",
+   "bbox": [
+    982.7,
+    671.0,
+    1137.2,
+    688.0
+   ]
+  },
+  {
+   "text": "REGISTRARME",
+   "font": "Type3 (117 0 R)",
+   "size": 14.0,
+   "color": "#000000",
+   "bbox": [
+    1009.5,
+    729.0,
+    1110.5,
+    746.0
+   ]
+  }
+ ]
+}
